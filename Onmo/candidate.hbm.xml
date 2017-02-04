@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8'?>  
+<!DOCTYPE hibernate-mapping PUBLIC  
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"  
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">  
+  
+<hibernate-mapping>  
+		<class name="com.onhire.model.CandidateDetails" table="candidatedetails">  
+		  <composite-id>
+				<key-property name="name" column="name"  />
+				<key-property name="identity" column="identity" />
+		</composite-id>         
+          <property name="email"></property> 
+           <property name="mobile"></property>  
+           <property name="modOfHire"></property>  
+          <property name="resume"></property>
+          <property name="appliedDate"></property>  
+</class>  
+            
+</hibernate-mapping>  
